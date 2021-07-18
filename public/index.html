@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+    <title>exercise playlist</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😮‍💨</text></svg>">
+  </head>
+  <body>
+  <h2> em & shir's exercise playlist</h2>
+
+  <!-- Tab links -->
+<div class="tab">
+  <button class="tablinks active" onclick="openExercise(event, 'Abs')">Abs</button>
+  <button class="tablinks" onclick="openExercise(event, 'Legs')">Legs</button>
+  <button class="tablinks" onclick="openExercise(event, 'Arms')">Arms</button>
+   <button class="tablinks" onclick="openExercise(event, 'Back')">Back</button>
+   <button class="tablinks" onclick="openExercise(event, 'Cardio')">Cardio</button>
+</div>
+
+<!-- Tab content -->
+<div id=Abs class="tabcontent" style="display:block">
+  <div id="abs"></div>
+  <div class="links">
+    <p>🔍 Search Youtube for...</p>
+    <ul>
+    <li><p style="color:white"> <a href="https://www.youtube.com/results?search_query=pam+abs" target="_blank">pam abs</a> </li>
+    <li><a href="https://www.youtube.com/results?search_query=hourglass+workout" target="_blank">hourglass workout</a> </p></li>
+    <li><a href="https://www.youtube.com/results?search_query=11+line+abs" target="_blank">11 lines abs</a> </p></li>
+  </div>
+  <div id="ab1"></div>
+  <div id="ab2"></div>
+  <div id="ab3"></div>
+</div>
+
+<div id="Legs" class="tabcontent">
+  <div id="legs"></div>
+    <div class="links">
+    <p>🔍 Search Youtube for...</p>
+    <ul>
+    <li><p style="color:white"> <a href="https://www.youtube.com/results?search_query=inner+thigh+workout" target="_blank">inner thigh workout</a> </li> 
+     <li><p style="color:white"> <a href="https://www.youtube.com/results?search_query=slim+leg+workout" target="_blank">slim leg workout</a> </li> </p>
+ </div>
+  <div id="leg1"></div>
+  <div id="leg2"></div>
+</div>
+
+<div id="Arms" class="tabcontent">
+  <div id="arm"></div>
+  <div class="links">
+    <p>🔍 Search Youtube for...</p>
+    <ul>
+    <li><p style="color:white"> <a href="https://www.youtube.com/results?search_query=upper+body+workout" target="_blank">upper body workout</a> </li> 
+     <li><p style="color:white"> <a href="https://www.youtube.com/results?search_query=arm+workout" target="_blank">arm workout</a> </li> </p>
+ </div>
+  <div id="arm1"></div>
+  <div id="arm2"></div>
+</div>
+
+<div id="Back" class="tabcontent">
+  <div id="back"></div>
+  <div class="links">
+    <p>🔍 Search Youtube for...</p>
+    <ul>
+    <li><p style="color:white"> <a href="https://www.youtube.com/results?search_query=back+workout" target="_blank">back workout</a> </li> </p>
+ </div>
+   <div id="back1"></div>
+    <div id="back2"></div>
+</div>
+
+<div id="Cardio" class="tabcontent">
+  <div id="cardio"></div>
+  <div class="links">
+    <p>🔍 Search Youtube for...</p>
+    <ul>
+    <li><p style="color:white"> <a href="https://www.youtube.com/results?search_query=pam+cardio" target="_blank">pam cardio</a> </li> 
+    <li><p style="color:white"> <a href="https://www.youtube.com/results?search_query=kpop+cardio" target="_blank">kpop cardio</a> </li> </p>
+ </div>
+   <div id="cardio1"></div>
+   <div id="cardio2"></div>
+</div>
+
+
+<script>
+function openExercise(evt, exerciseType) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(exerciseType).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+ 
+<div class="footer">  
+<p> made by shirley ✌️😌</p>
+</div>
+
+  </body>
+</html>
